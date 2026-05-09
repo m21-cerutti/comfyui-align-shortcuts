@@ -11,4 +11,4 @@ Repository = "https://github.com/m21-cerutti/comfyui-align-shortcuts"
 [tool.comfy]
 PublisherId = "m21-cerutti"
 DisplayName = "ComfyUI - Align Shortcuts"
-Icon = "https://github.com/m21-cerutti/comfyui-align-shortcuts/tree/main/assets/logo.png"
+Icon = ""
