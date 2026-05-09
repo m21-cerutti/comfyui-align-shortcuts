@@ -1,5 +1,7 @@
 # ComfyUI-Align Shortcuts
 
+> :warning: The project is currently in developement and don't have the feature listed here.
+
 Shortcuts designed to help align nodes in a comfyui editor. Based on <https://github.com/coolzilj/ComfyUI-LJNodes>.
 
 - [Description](#description)
@@ -35,40 +37,16 @@ This is the easiest method:
 > ComfyUI must be installed and running (see [requirements](https://docs.comfy.org/installation/system_requirements)).
 > Keep in mind where is your path for models, we will use `$COMFYUI_ROOT` in documentation.
 
-First clone the repository with:
-
-``` bash
-git clone https://github.com/m21-cerutti/ComfyUI-Align-Shortcuts.git
-```
-
-For a smooth experience, use then a symbolic link to your local repository inside your ComfyUI installation `$COMFYUI_ROOT`.
-
 1. Navigate to the target `custom_nodes` folder inside your main ComfyUI installation:
-
-    For linux:
 
     ```bash
     cd $COMFYUI_ROOT/custom_nodes
     ```
 
-    For windows:
+2. Clone the repository with:
 
-    ```bash
-    cd $COMFYUI_ROOT\custom_nodes
-    ```
-
-2. Create the symbolic link, pointing from the shortcut location to the absolute path of this project's source code (replace `$PROJECT_SOURCE_PATH`):
-
-    For linux:
-
-    ```bash
-    ln -s $PROJECT_SOURCE_PATH comfyui-align-shortcuts
-    ```
-
-    For windows (admin):
-
-    ```bash
-    New-Item -ItemType SymbolicLink -Name "comfyui-align-shortcuts" -Target $PROJECT_SOURCE_PATH
+    ``` bash
+    git clone https://github.com/m21-cerutti/ComfyUI-Align-Shortcuts.git
     ```
 
 ## Usage
