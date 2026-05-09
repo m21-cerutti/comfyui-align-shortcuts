@@ -2,7 +2,7 @@ import { app } from "../../scripts/app.js";
 import { baseNameExtension, Log } from "./utils.js";
 
 app.registerExtension({
-  name: baseNameExtension + ".Shortcuts",
+  name: "Comfy.Align.Shortcuts",
   // Register commands
   commands: [
     {
