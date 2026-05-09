@@ -28,4 +28,4 @@ Instructions:
 ### Documentation
 
 - For general documentation: Read `@README.md`.
-- For ComfyUI developper documentation: always fetch first <https://docs.comfy.org/llms.txt>
+- For ComfyUI developper documentation: always fetch first <https://docs.comfy.org/llms.txt> then <https://github.com/jagenjo/litegraph.js/blob/master/guides/README.md>

@@ -17,7 +17,12 @@ Please adhere to these guidelines when contributing:
 
 ## AI
 
-We use AI in this repository as experiment with opencode and local llm. You can propose improvments but we will prefer using local LLM and it is definetely not mandatory to use them. 
+We use AI in this repository as experiment with opencode and local llm. You can propose improvments but we will prefer using local LLM and it is definetely not mandatory to use them.
+
+## Developer resources
+
+- <https://docs.comfy.org/custom-nodes/js/javascript_overview>
+- <https://github.com/jagenjo/litegraph.js/blob/master/guides/README.md>
 
 ## Question ?
 
