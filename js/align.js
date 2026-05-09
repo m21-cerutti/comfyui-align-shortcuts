@@ -1,5 +1,5 @@
 import { app } from "../../scripts/app.js";
-import { baseNameExtension, Log } from "./utils.js";
+import { Log } from "./utils.js";
 
 app.registerExtension({
   name: "Comfy.Align.Shortcuts",
