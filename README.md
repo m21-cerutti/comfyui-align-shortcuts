@@ -3,11 +3,12 @@
 Shortcuts designed to help align nodes in a comfyui editor. Based on <https://github.com/coolzilj/ComfyUI-LJNodes>.
 
 - [Description](#description)
-- [Dependencies](#dependencies)
-- [Installation by ComfyUI Manager (Recommended)](#installation-by-comfyui-manager-recommended)
-- [Installation by Git Clone / Symlink Setup (Advanced/Manual)](#installation-by-git-clone--symlink-setup-advancedmanual)
+- [Installation](#installation)
+  - [ComfyUI Manager (Recommended)](#comfyui-manager-recommended)
+  - [Git Clone / Symlink Setup (Advanced/Manual)](#git-clone--symlink-setup-advancedmanual)
 - [Usage](#usage)
-- [Changing Keybindings](#changing-keybindings)
+  - [Align nodes shortcuts](#align-nodes-shortcuts)
+  - [Changing Keybindings](#changing-keybindings)
 - [Contribution Guide](#contribution-guide)
 - [Authors](#authors)
 - [License](#license)
@@ -15,17 +16,13 @@ Shortcuts designed to help align nodes in a comfyui editor. Based on <https://gi
 
 ## Description
 
-This custom node suite provides intuitive shortcuts to align groups of nodes within the ComfyUI editor. 
+This custom node suite provides intuitive shortcuts to align groups of nodes within the ComfyUI editor.
 
 It addres limitations found in previous alignment tools, such as those mentioned in ComfyUI-Align not supporting Node 2.0 (<https://github.com/Moooonet/ComfyUI-Align/issues/14>), and updating abandoned project ComfyUI-LJNodes <https://github.com/coolzilj/ComfyUI-LJNodes>.
 
+## Installation
 
-## Dependencies
-
-- ComfyUI must be installed and running (see [requirements](https://docs.comfy.org/installation/system_requirements)).
-Keep in mind where is your path for models, we will use `$COMFYUI_ROOT` in documentation.
-
-## Installation by ComfyUI Manager (Recommended)
+### ComfyUI Manager (Recommended)
 
 This is the easiest method:
 
@@ -33,9 +30,12 @@ This is the easiest method:
 2. Search for `Align nodes` in the search bar.
 3. Click `Install`.
 
-## Installation by Git Clone / Symlink Setup (Advanced/Manual)
+### Git Clone / Symlink Setup (Advanced/Manual)
 
-If you want to use directly the sources, first clone the repository with:
+> ComfyUI must be installed and running (see [requirements](https://docs.comfy.org/installation/system_requirements)).
+> Keep in mind where is your path for models, we will use `$COMFYUI_ROOT` in documentation.
+
+First clone the repository with:
 
 ``` bash
 git clone https://github.com/m21-cerutti/ComfyUI-Align-Shortcuts.git
@@ -57,26 +57,27 @@ For a smooth experience, use then a symbolic link to your local repository insid
 
 ## Usage
 
-This extension allows users to select multiple nodes and instantly align them along an axis using keyboard shortcuts.
-
-**Workflow:**
+### Align nodes shortcuts
 
 1. Select the desired group of nodes by clicking and dragging over them, or holding `Shift` + click to select individual nodes.
 2. Use the configured shortcut keys:
     - `Ctrl + Up`: Aligns all selected nodes vertically by their top edge.
-        ![Vertical alignment before](assets/screenshot_before_vertical.png)
-        ![Vertical alignment after](assets/screenshot_after_vertical.png)
-    - `Ctrl + Down`: Aligns all selected nodes vertically by their bottom edge.
-        ![Vertical alignment before](assets/screenshot_before_vertical.png)
-        ![Vertical alignment after](assets/screenshot_after_vertical.png)
-    - `Ctrl + Left`: Aligns all selected nodes horizontally by their left edge.
-        ![Horizontal alignment before](assets/screenshot_before_horizontal.png)
-        ![Horizontal alignment after](assets/screenshot_after_horizontal.png)
-    - `Ctrl + Right`: Aligns all selected nodes horizontally by their right edge.
-        ![Horizontal alignment before](assets/screenshot_before_horizontal.png)
-        ![Horizontal alignment after](assets/screenshot_after_horizontal.png)
 
-## Changing Keybindings
+        ![Top alignment](assets/screenshot_top_align.png)
+
+    - `Ctrl + Down`: Aligns all selected nodes vertically by their bottom edge.
+
+        ![Bottom alignment after](assets/screenshot_bottom_align.png)
+
+    - `Ctrl + Left`: Aligns all selected nodes horizontally by their left edge.
+  
+        ![Left alignment before](assets/screenshot_left_align.png)
+
+    - `Ctrl + Right`: Aligns all selected nodes horizontally by their right edge.
+
+        ![Right alignment before](assets/screenshot_right_align.png)
+
+### Changing Keybindings
 
 Keybinding customization is handled by ComfyUI's settings. To change the shortcut used for node alignment:
 
