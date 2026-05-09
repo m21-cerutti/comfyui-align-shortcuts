@@ -45,23 +45,39 @@ For a smooth experience, use then a symbolic link to your local repository insid
 
 1. Navigate to the target `custom_nodes` folder inside your main ComfyUI installation:
 
+    For linux:
+
     ```bash
-    cd $COMFYUI_ROOT/custom_nodes 
+    cd $COMFYUI_ROOT/custom_nodes
+    ```
+
+    For windows:
+
+    ```bash
+    cd $COMFYUI_ROOT\custom_nodes
     ```
 
 2. Create the symbolic link, pointing from the shortcut location to the absolute path of this project's source code (replace `$PROJECT_SOURCE_PATH`):
 
+    For linux:
+
     ```bash
-    ln -s $PROJECT_SOURCE_PATH custom_nodes_shortcut
+    ln -s $PROJECT_SOURCE_PATH comfyui-align-shortcuts
+    ```
+
+    For windows (admin):
+
+    ```bash
+    New-Item -ItemType SymbolicLink -Name "comfyui-align-shortcuts" -Target $PROJECT_SOURCE_PATH
     ```
 
 ## Usage
 
 ### Align nodes shortcuts
 
-1. Select the desired group of nodes by clicking and dragging over them, or holding `Shift` + click to select individual nodes.
+1. Select the desired group of nodes by clicking `Ctrl` and dragging over them, or holding `Shift` + click to select individual nodes.
 2. Use the configured shortcut keys:
-    - `Ctrl + Up`: Aligns all selected nodes vertically by their top edge.
+    - `Ctrl + up`: Aligns all selected nodes vertically by their top edge.
 
         ![Top alignment](assets/screenshot_top_align.png)
 
