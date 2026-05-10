@@ -1,7 +1,7 @@
 [project]
 name = "comfyui-align-shortcuts"
 description = "Shortcuts for aligning nodes."
-version = "1.1.0"
+version = "1.1.1"
 license = { file = "LICENSE" }
 dependencies  = []
 
@@ -11,4 +11,4 @@ Repository = "https://github.com/m21-cerutti/comfyui-align-shortcuts"
 [tool.comfy]
 PublisherId = "m21-cerutti"
 DisplayName = "ComfyUI - Align Shortcuts"
-Icon = "https://github.com/m21-cerutti/comfyui-align-shortcuts/tree/main/assets/logo.png"
+Icon = "https://github.com/m21-cerutti/comfyui-align-shortcuts/blob/main/assets/logo.svg"

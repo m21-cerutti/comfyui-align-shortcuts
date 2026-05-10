@@ -6,13 +6,12 @@ Shortcuts designed to help align nodes in a comfyui editor.
 <br>
 _Based on <https://github.com/coolzilj/ComfyUI-LJNodes>._
 
-[![GitHub Release](https://img.shields.io/github/v/release/m21-cerutti/comfyui-align-shortcuts)](https://github.com/m21-cerutti/comfyui-align-shortcuts/releases/latest/download/ComfyUI-Easy-Install.zip)
+[![GitHub Release](https://img.shields.io/github/v/release/m21-cerutti/comfyui-align-shortcuts)](https://github.com/m21-cerutti/comfyui-align-shortcuts/releases/latest/)
 [![GitHub Release Date](https://img.shields.io/github/release-date/m21-cerutti/comfyui-align-shortcuts?style=flat)](https://github.com/m21-cerutti/comfyui-align-shortcuts/releases)
 [![GitHub All Releases](https://img.shields.io/github/downloads/m21-cerutti/comfyui-align-shortcuts/total.svg)](https://github.com/m21-cerutti/comfyui-align-shortcuts/releases)
-[![GitHub Downloads Latest](https://img.shields.io/github/downloads/m21-cerutti/comfyui-align-shortcuts/latest/total?style=flat&label=⬇+latest&color=orange)](https://github.com/m21-cerutti/comfyui-align-shortcuts/releases/latest/download/ComfyUI-Easy-Install.zip)
+[![GitHub Downloads Latest](https://img.shields.io/github/downloads/m21-cerutti/comfyui-align-shortcuts/latest/total?style=flat&label=⬇+latest&color=orange)](https://github.com/m21-cerutti/comfyui-align-shortcuts/releases/latest/)
 
-<img alt="ComfyUI-Align Shortcuts Logo" src="assets/example
-.png" />
+<img alt="ComfyUI-Align Shortcuts Logo" src="assets/example.png" />
 <br>
 
 </div>
