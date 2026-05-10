@@ -1,8 +1,24 @@
+<div align="center">
+
 # ComfyUI-Align Shortcuts
 
-> :warning: The project is currently in developement and don't have the feature listed here.
+Shortcuts designed to help align nodes in a comfyui editor.
+<br>
+_Based on <https://github.com/coolzilj/ComfyUI-LJNodes>._
 
-Shortcuts designed to help align nodes in a comfyui editor. Based on <https://github.com/coolzilj/ComfyUI-LJNodes>.
+[![GitHub Release](https://img.shields.io/github/v/release/m21-cerutti/comfyui-align-shortcuts)](https://github.com/m21-cerutti/comfyui-align-shortcuts/releases/latest/download/ComfyUI-Easy-Install.zip)
+[![GitHub Release Date](https://img.shields.io/github/release-date/m21-cerutti/comfyui-align-shortcuts?style=flat)](https://github.com/m21-cerutti/comfyui-align-shortcuts/releases)
+[![GitHub All Releases](https://img.shields.io/github/downloads/m21-cerutti/comfyui-align-shortcuts/total.svg)](https://github.com/m21-cerutti/comfyui-align-shortcuts/releases)
+[![GitHub Downloads Latest](https://img.shields.io/github/downloads/m21-cerutti/comfyui-align-shortcuts/latest/total?style=flat&label=⬇+latest&color=orange)](https://github.com/m21-cerutti/comfyui-align-shortcuts/releases/latest/download/ComfyUI-Easy-Install.zip)
+
+<img alt="ComfyUI-Align Shortcuts Logo" src="assets/example
+.png" />
+<br>
+
+</div>
+
+<!-- omit in toc -->
+## Summary
 
 - [Description](#description)
 - [Installation](#installation)
@@ -11,6 +27,7 @@ Shortcuts designed to help align nodes in a comfyui editor. Based on <https://gi
 - [Usage](#usage)
   - [Align nodes shortcuts](#align-nodes-shortcuts)
   - [Changing Keybindings](#changing-keybindings)
+- [Kown issues](#kown-issues)
 - [Contribution Guide](#contribution-guide)
 - [Authors](#authors)
 - [License](#license)
@@ -20,7 +37,7 @@ Shortcuts designed to help align nodes in a comfyui editor. Based on <https://gi
 
 This custom node suite provides intuitive shortcuts to align groups of nodes within the ComfyUI editor.
 
-It addres limitations found in previous alignment tools, such as those mentioned in ComfyUI-Align not supporting Node 2.0 (<https://github.com/Moooonet/ComfyUI-Align/issues/14>), and updating abandoned project ComfyUI-LJNodes <https://github.com/coolzilj/ComfyUI-LJNodes>.
+It address limitations found in others alignment tools, like [ComfyUI-Align not supporting Node 2.0](https://github.com/Moooonet/ComfyUI-Align/issues/14), and [ComfyUI-LJNodes](https://github.com/coolzilj/ComfyUI-LJNodes) that was abandonned.
 
 ## Installation
 
@@ -53,32 +70,41 @@ This is the easiest method:
 
 ### Align nodes shortcuts
 
-1. Select the desired group of nodes by clicking `Ctrl` and dragging over them, or holding `Shift` + click to select individual nodes.
-2. Use the configured shortcut keys:
-    - `Ctrl + up`: Aligns all selected nodes vertically by their top edge.
+1. Select the desired group of nodes by clicking `Alt` and dragging over them, or holding `Shift` + click to select individual nodes.
+2. Use the configured shortcut keys, by default:
 
-        ![Top alignment](assets/screenshot_top_align.png)
+    - `Alt + W`: Aligns all selected nodes vertically by their top edge.
 
-    - `Ctrl + Down`: Aligns all selected nodes vertically by their bottom edge.
+    <img src="assets/top.png" alt="op alignment" width="200"/>
 
-        ![Bottom alignment after](assets/screenshot_bottom_align.png)
+    - `Alt + S`: Aligns all selected nodes vertically by their bottom edge.
 
-    - `Ctrl + Left`: Aligns all selected nodes horizontally by their left edge.
+    <img src="assets/bottom.png" alt="Bottom alignment" width="200"/>
+
+    - `Alt + A`: Aligns all selected nodes horizontally by their left edge.
   
-        ![Left alignment before](assets/screenshot_left_align.png)
+    <img src="assets/left.png" alt="Left alignment t" height="200"/>
 
-    - `Ctrl + Right`: Aligns all selected nodes horizontally by their right edge.
-
-        ![Right alignment before](assets/screenshot_right_align.png)
+    - `Alt + D`: Aligns all selected nodes horizontally by their right edge.
+  
+    <img src="assets/right.png" alt="Right alignment" height="200"/>
 
 ### Changing Keybindings
 
 Keybinding customization is handled by ComfyUI's settings. To change the shortcut used for node alignment:
 
 1. Access the ComfyUI Interface Settings and search for "Align node".
-2. Modify the existing keymap entries assigned to our shortcuts (`Ctrl + Up/Down/Left/Right`).
+2. Modify the existing keymap entries assigned to our shortcuts (`Alt + W/A/S/D`).
+
+![Keybindings](assets/keybindings.png)
 
 For full documentation, please see: <https://docs.comfy.org/interface/shortcuts>
+
+## Kown issues
+
+- We can't use `Alt + Arrow` for keybing when there is selected nodes.
+
+See <https://github.com/Comfy-Org/ComfyUI_frontend/issues/12112>
 
 ## Contribution Guide
 

@@ -7,59 +7,59 @@ app.registerExtension({
   commands: [
     {
       id: "allignTop",
-      label: "Align nodes bottom edge",
-      function: () => {
-        Log("allignTop command.");
-        const nodes = app.canvas.selected_nodes;
-        // const groups = app.canvas.selected_group;
-        AlignNodes(nodes, "left");
-      },
-      {
-      id: "allignBottom",
       label: "Align nodes top edge",
       function: () => {
-        Log("allignBottom command.");
         const nodes = app.canvas.selected_nodes;
         // const groups = app.canvas.selected_group;
-        AlignNodes(nodes, "left");
-      },
-      {
+        alignNodes(nodes, "top");
+      }
+    },
+    {
+      id: "allignBottom",
+      label: "Align nodes bottom edge",
+      function: () => {
+        const nodes = app.canvas.selected_nodes;
+        // const groups = app.canvas.selected_group;
+        alignNodes(nodes, "bottom");
+      }
+    },
+    {
       id: "allignLeft",
       label: "Align nodes left edge",
       function: () => {
-        Log("allignLeft command.");
         const nodes = app.canvas.selected_nodes;
         // const groups = app.canvas.selected_group;
-        AlignNodes(nodes, "left");
-      },
-      {
+        alignNodes(nodes, "left");
+      }
+    },
+    {
       id: "allignRight",
       label: "Align nodes right edge",
       function: () => {
-        Log("allignRight command.");
         const nodes = app.canvas.selected_nodes;
         // const groups = app.canvas.selected_group;
-        AlignNodes(nodes, "left");
-      },
-    }
+        alignNodes(nodes, "right");
+      }
+    },
   ],
   // Default keybindings
   keybindings: [
     {
-      combo: { key: "ArrowUp", alt: true },
-      commandId: "allignTop"
+      combo: { key: "5", alt: true },
+      commandId: "allignTop",
     },
     {
-      combo: { key: "ArrowDown", alt: true },
-      commandId: "allignBottom"
+      combo: { key: "2", alt: true },
+      commandId: "allignBottom",
     },
     {
-      combo: { key: "ArrowLeft", alt: true },
-      commandId: "allignLeft"
-    },{
-      combo: { key: "ArrowRight", alt: true },
-      commandId: "allignRight"
-    }
+      combo: { key: "1", alt: true },
+      commandId: "allignLeft",
+    },
+    {
+      combo: { key: "3", alt: true },
+      commandId: "allignRight",
+    },
   ],
   async setup() {
     Log("installation complete.");
