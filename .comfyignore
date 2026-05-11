@@ -1,3 +1,4 @@
 # No need for now .gitgnore, not checkout in CI (in local be carefull)
 .github/
 AGENTS.md
+.comfyignore
